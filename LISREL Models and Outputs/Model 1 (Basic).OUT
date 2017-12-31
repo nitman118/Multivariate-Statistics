@@ -1,0 +1,2139 @@
+
+                                DATE: 10/19/2017
+                                  TIME: 12:36
+
+
+                          L I S R E L  9.30 (STUDENT)
+
+                                       BY
+
+                         Karl G. Jöreskog & Dag Sörbom
+
+
+
+                    This program is published exclusively by
+                    Scientific Software International, Inc.
+                         http://www.ssicentral.com
+
+        Copyright by Scientific Software International, Inc., 1981-2017
+          Use of this program is subject to the terms specified in the
+                        Universal Copyright Convention.
+
+ The following lines were read from file C:\Users\diego.barreto\Documents\7. TUe\Q1 2017\Multivariate Statistics\Assignments\Assignment 3\Model 1 (Basic).spl:
+
+ SEM TEST VITAMIN MODEL
+ MODEL 1 (LINEAR)
+ DA NI=12 NO=1332
+ CM FI=DATA2017.COV
+ LA
+ SAT CHA EXH ANX CAUT CDEM CSUP AUT2 DEM2 SUP2 SEX AGE
+ SE
+ 1 3 4 5 6 7 8 9 10 11 12/
+ MO NY=9 NX=2 BE=FU,FI GA=FU,FI PH=SY,FR PS=SY,FI
+ FR BE(1,4) BE(2,4) BE(3,4)
+ FR BE(1,5) BE(2,5) BE(3,5)
+ FR BE(1,6) BE(2,6) BE(3,6)
+ FR GA(1,1) GA(2,1) GA(3,1) GA(4,1) GA(5,1) GA(6,1)
+ FR GA(1,2) GA(2,2) GA(3,2) GA(4,2) GA(5,2) GA(6,2)
+ FR PS(1,1) PS(2,2) PS(3,3) PS(4,4) PS(5,5) PS(6,6)
+ FR PS(7,7) PS(8,8) PS(9,9)
+ FR PS(4,5) PS(4,6) PS(4,7) PS(4,8) PS(4,9)
+ FR PS(5,6) PS(5,7) PS(5,8) PS(5,9)
+ FR PS(6,7) PS(6,8) PS(6,9)
+ FR PS(7,8) PS(7,9) PS(8,9)
+ FR PS(1,2) PS(1,3) PS(2,3)
+ OU ALL
+
+ SEM TEST VITAMIN MODEL                                                         
+
+                           Number of Input Variables 12
+                           Number of Y - Variables    9
+                           Number of X - Variables    2
+                           Number of ETA - Variables  9
+                           Number of KSI - Variables  2
+                           Number of Observations  1332
+
+ SEM TEST VITAMIN MODEL                                                         
+
+         Covariance Matrix       
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.740
+      EXH     -0.285      0.750
+      ANX     -0.074      0.171      0.191
+     CAUT      0.063     -0.059     -0.017      0.317
+     CDEM     -0.100      0.235      0.049     -0.087      0.347
+     CSUP      0.104     -0.090     -0.032      0.029     -0.035      0.118
+     AUT2      0.004     -0.017      0.001      0.017      0.012      0.000
+     DEM2     -0.026      0.016      0.023     -0.022      0.019      0.003
+     SUP2     -0.025      0.019      0.007     -0.003      0.008     -0.010
+      SEX      0.028     -0.004     -0.003     -0.034      0.011      0.014
+      AGE     -0.548     -0.147     -0.026      0.300      0.367     -0.218
+
+         Covariance Matrix       
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.207
+     DEM2      0.027      0.302
+     SUP2      0.004      0.011      0.028
+      SEX     -0.008      0.012      0.001      0.129
+      AGE      0.598      0.149      0.024     -0.374     67.136
+
+ Total Variance = 70.265 Generalized Variance = 0.674030D-05                            
+
+ Largest Eigenvalue = 67.153 Smallest Eigenvalue = 0.026                                   
+
+ Condition Number = 50.893
+
+ WARNING: The Condition Number indicates severe multicollinearity.
+
+          One or more variables may be redundant.
+
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Parameter Specifications
+
+         BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP
+            --------   --------   --------   --------   --------   --------
+      SAT          0          0          0          1          2          3
+      EXH          0          0          0          4          5          6
+      ANX          0          0          0          7          8          9
+     CAUT          0          0          0          0          0          0
+     CDEM          0          0          0          0          0          0
+     CSUP          0          0          0          0          0          0
+     AUT2          0          0          0          0          0          0
+     DEM2          0          0          0          0          0          0
+     SUP2          0          0          0          0          0          0
+
+         BETA        
+
+                AUT2       DEM2       SUP2
+            --------   --------   --------
+      SAT          0          0          0
+      EXH          0          0          0
+      ANX          0          0          0
+     CAUT          0          0          0
+     CDEM          0          0          0
+     CSUP          0          0          0
+     AUT2          0          0          0
+     DEM2          0          0          0
+     SUP2          0          0          0
+
+         GAMMA       
+
+                 SEX        AGE
+            --------   --------
+      SAT         10         11
+      EXH         12         13
+      ANX         14         15
+     CAUT         16         17
+     CDEM         18         19
+     CSUP         20         21
+     AUT2          0          0
+     DEM2          0          0
+     SUP2          0          0
+
+         PHI         
+
+                 SEX        AGE
+            --------   --------
+      SEX         22
+      AGE         23         24
+
+         PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP
+            --------   --------   --------   --------   --------   --------
+      SAT         25
+      EXH         26         27
+      ANX         28         29         30
+     CAUT          0          0          0         31
+     CDEM          0          0          0         32         33
+     CSUP          0          0          0         34         35         36
+     AUT2          0          0          0         37         38         39
+     DEM2          0          0          0         41         42         43
+     SUP2          0          0          0         46         47         48
+
+         PSI         
+
+                AUT2       DEM2       SUP2
+            --------   --------   --------
+     AUT2         40
+     DEM2         44         45
+     SUP2         49         50         51
+
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Initial Estimates (TSLS)
+
+         BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -       0.098     -0.187      0.775
+      EXH       - -        - -        - -       0.045      0.638     -0.594
+      ANX       - -        - -        - -       0.000      0.118     -0.236
+     CAUT       - -        - -        - -        - -        - -        - - 
+     CDEM       - -        - -        - -        - -        - -        - - 
+     CSUP       - -        - -        - -        - -        - -        - - 
+     AUT2       - -        - -        - -        - -        - -        - - 
+     DEM2       - -        - -        - -        - -        - -        - - 
+     SUP2       - -        - -        - -        - -        - -        - - 
+
+         BETA        
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT       - -        - -        - - 
+      EXH       - -        - -        - - 
+      ANX       - -        - -        - - 
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+         GAMMA       
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.166     -0.004
+      EXH     -0.030     -0.008
+      ANX     -0.011     -0.002
+     CAUT     -0.254      0.003
+     CDEM      0.101      0.006
+     CSUP      0.098     -0.003
+     AUT2       - -        - - 
+     DEM2       - -        - - 
+     SUP2       - -        - - 
+
+         Covariance Matrix of Y and X            
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.740
+      EXH     -0.285      0.750
+      ANX     -0.074      0.171      0.191
+     CAUT      0.063     -0.059     -0.017      0.317
+     CDEM     -0.100      0.235      0.049     -0.087      0.347
+     CSUP      0.104     -0.090     -0.032      0.029     -0.035      0.118
+     AUT2      0.001      0.005      0.000      0.013      0.009      0.002
+     DEM2     -0.004      0.009      0.002     -0.019      0.017      0.002
+     SUP2     -0.010      0.011      0.003     -0.003      0.008     -0.010
+      SEX      0.028     -0.004     -0.003     -0.034      0.011      0.014
+      AGE     -0.548     -0.147     -0.026      0.300      0.367     -0.218
+
+         Covariance Matrix of Y and X            
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.207
+     DEM2      0.027      0.302
+     SUP2      0.004      0.011      0.028
+      SEX       - -        - -        - -       0.129
+      AGE       - -        - -        - -      -0.374     67.136
+
+         PHI         
+
+                 SEX        AGE   
+            --------   --------
+      SEX      0.129
+      AGE     -0.374     67.136
+
+         PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.627
+      EXH     -0.165      0.549
+      ANX     -0.038      0.122      0.178
+     CAUT       - -        - -        - -       0.308
+     CDEM       - -        - -        - -      -0.085      0.344
+     CSUP       - -        - -        - -       0.033     -0.035      0.116
+     AUT2       - -        - -        - -       0.013      0.009      0.002
+     DEM2       - -        - -        - -      -0.019      0.017      0.002
+     SUP2       - -        - -        - -      -0.003      0.008     -0.010
+
+         PSI         
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2      0.207
+     DEM2      0.027      0.302
+     SUP2      0.004      0.011      0.028
+
+         Squared Multiple Correlations for Structural Equations  
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+               0.152      0.269      0.070      0.030      0.009      0.016
+
+         Squared Multiple Correlations for Structural Equations  
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+                - -        - -        - - 
+
+ NOTE: R² for Structural Equatios are Hayduk's (2006) Blocked-Error R²
+
+         Reduced Form                
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.198     -0.007
+ 
+      EXH     -0.035     -0.002
+ 
+      ANX     -0.022     -0.001
+ 
+     CAUT     -0.254      0.003
+ 
+     CDEM      0.101      0.006
+ 
+     CSUP      0.098     -0.003
+ 
+     AUT2       - -        - - 
+ 
+     DEM2       - -        - - 
+ 
+     SUP2       - -        - - 
+ 
+
+         Squared Multiple Correlations for Reduced Form          
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+               0.013      0.001      0.000      0.030      0.009      0.016
+
+         Squared Multiple Correlations for Reduced Form          
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+                - -        - -        - - 
+
+          Behavior under Minimization Iterations
+
+           Iter  Try    Abscissa          Slope             Function
+
+              1    0    0.00000000D+00   -0.16550165D-03    0.31376737D-01
+                   1    0.10000000D+01    0.16046420D-18    0.31293986D-01
+
+              2    0    0.00000000D+00   -0.36024086D-05    0.31293986D-01
+                   1    0.10000000D+01   -0.15646361D-06    0.31292106D-01
+
+              3    0    0.00000000D+00   -0.20160538D-07    0.31292106D-01
+                   1    0.10000000D+01   -0.90688679D-10    0.31292096D-01
+
+              4    0    0.00000000D+00   -0.75562868D-10    0.31292096D-01
+                   1    0.10000000D+01   -0.94411212D-12    0.31292096D-01
+
+              5    0    0.00000000D+00   -0.16341118D-12    0.31292096D-01
+                   1    0.10000000D+01   -0.17218520D-15    0.31292096D-01
+ 
+
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Number of Iterations = 5           
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -       0.098     -0.187      0.775
+                                              (0.041)    (0.039)    (0.065)
+                                                2.385     -4.825     11.849
+ 
+      EXH       - -        - -        - -       0.045      0.638     -0.594
+                                              (0.038)    (0.036)    (0.061)
+                                                1.187     17.592     -9.713
+ 
+      ANX       - -        - -        - -       0.000      0.118     -0.236
+                                              (0.022)    (0.021)    (0.035)
+                                                0.010      5.740     -6.797
+ 
+     CAUT       - -        - -        - -        - -        - -        - - 
+ 
+     CDEM       - -        - -        - -        - -        - -        - - 
+ 
+     CSUP       - -        - -        - -        - -        - -        - - 
+ 
+     AUT2       - -        - -        - -        - -        - -        - - 
+ 
+     DEM2       - -        - -        - -        - -        - -        - - 
+ 
+     SUP2       - -        - -        - -        - -        - -        - - 
+ 
+
+         BETA        
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT       - -        - -        - - 
+ 
+      EXH       - -        - -        - - 
+ 
+      ANX       - -        - -        - - 
+ 
+     CAUT       - -        - -        - - 
+ 
+     CDEM       - -        - -        - - 
+ 
+     CSUP       - -        - -        - - 
+ 
+     AUT2       - -        - -        - - 
+ 
+     DEM2       - -        - -        - - 
+ 
+     SUP2       - -        - -        - - 
+ 
+
+         GAMMA       
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.166     -0.004
+             (0.062)    (0.003)
+               2.673     -1.539
+ 
+      EXH     -0.030     -0.008
+             (0.058)    (0.003)
+              -0.509     -3.172
+ 
+      ANX     -0.011     -0.002
+             (0.033)    (0.001)
+              -0.329     -1.304
+ 
+     CAUT     -0.244      0.003
+             (0.042)    (0.002)
+              -5.755      1.413
+ 
+     CDEM      0.096      0.006
+             (0.045)    (0.002)
+               2.140      2.803
+ 
+     CSUP      0.098     -0.003
+             (0.026)    (0.001)
+               3.824     -2.441
+ 
+     AUT2       - -        - - 
+ 
+     DEM2       - -        - - 
+ 
+     SUP2       - -        - - 
+ 
+
+         Covariance Matrix of Y and X            
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.740
+      EXH     -0.285      0.751
+      ANX     -0.074      0.171      0.191
+     CAUT      0.063     -0.059     -0.017      0.316
+     CDEM     -0.100      0.235      0.049     -0.087      0.346
+     CSUP      0.104     -0.090     -0.032      0.029     -0.035      0.118
+     AUT2      0.001      0.005      0.001      0.013      0.009      0.002
+     DEM2     -0.004      0.009      0.002     -0.019      0.017      0.002
+     SUP2     -0.010      0.011      0.003     -0.003      0.008     -0.010
+      SEX      0.029     -0.004     -0.003     -0.033      0.010      0.014
+      AGE     -0.548     -0.167     -0.029      0.268      0.335     -0.222
+
+         Covariance Matrix of Y and X            
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.207
+     DEM2      0.027      0.302
+     SUP2      0.004      0.011      0.028
+      SEX       - -        - -        - -       0.129
+      AGE       - -        - -        - -      -0.374     67.136
+
+         PHI         
+
+                 SEX        AGE   
+            --------   --------
+      SEX      0.129
+             (0.005)
+              25.788
+ 
+      AGE     -0.374     67.136
+             (0.081)    (2.603)
+              -4.591     25.788
+ 
+
+         PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.627
+             (0.024)
+              25.788
+ 
+      EXH     -0.165      0.549
+             (0.017)    (0.021)
+              -9.884     25.788
+ 
+      ANX     -0.038      0.122      0.178
+             (0.009)    (0.009)    (0.007)
+              -4.169     13.238     25.788
+ 
+     CAUT       - -        - -        - -       0.308
+                                              (0.012)
+                                               25.788
+ 
+     CDEM       - -        - -        - -      -0.085      0.344
+                                              (0.009)    (0.013)
+                                               -9.226     25.788
+ 
+     CSUP       - -        - -        - -       0.033     -0.035      0.116
+                                              (0.005)    (0.006)    (0.004)
+                                                6.266     -6.375     25.788
+ 
+     AUT2       - -        - -        - -       0.013      0.009      0.002
+                                              (0.007)    (0.007)    (0.004)
+                                                1.915      1.231      0.545
+ 
+     DEM2       - -        - -        - -      -0.019      0.017      0.002
+                                              (0.008)    (0.009)    (0.005)
+                                               -2.288      1.975      0.393
+ 
+     SUP2       - -        - -        - -      -0.003      0.008     -0.010
+                                              (0.003)    (0.003)    (0.002)
+                                               -1.341      2.907     -6.520
+ 
+
+         PSI         
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2      0.207
+             (0.008)
+              25.788
+ 
+     DEM2      0.027      0.302
+             (0.007)    (0.012)
+               3.856     25.788
+ 
+     SUP2      0.004      0.011      0.028
+             (0.002)    (0.003)    (0.001)
+               2.054      4.361     25.788
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+               0.152      0.269      0.070      0.027      0.008      0.017
+
+         Squared Multiple Correlations for Structural Equations  
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+                - -        - -        - - 
+
+ NOTE: R² for Structural Equatios are Hayduk's (2006) Blocked-Error R²
+
+         Reduced Form                
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.201     -0.007
+             (0.066)    (0.003)
+               3.061     -2.450
+ 
+      EXH     -0.038     -0.003
+             (0.066)    (0.003)
+              -0.571     -0.928
+ 
+      ANX     -0.023     -0.001
+             (0.034)    (0.001)
+              -0.680     -0.381
+ 
+     CAUT     -0.244      0.003
+             (0.042)    (0.002)
+              -5.753      1.412
+ 
+     CDEM      0.096      0.006
+             (0.045)    (0.002)
+               2.139      2.802
+ 
+     CSUP      0.098     -0.003
+             (0.026)    (0.001)
+               3.822     -2.440
+ 
+     AUT2       - -        - - 
+ 
+     DEM2       - -        - - 
+ 
+     SUP2       - -        - - 
+ 
+
+         Squared Multiple Correlations for Reduced Form          
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+               0.013      0.001      0.000      0.027      0.008      0.017
+
+         Squared Multiple Correlations for Reduced Form          
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+                - -        - -        - - 
+
+                                 Log-likelihood Values
+
+                        Estimated Model          Saturated Model
+                        ---------------          ---------------
+ Number of free parameters(t)        51                       66
+ -2ln(L)                      -1125.303                -1208.665
+ AIC (Akaike, 1974)*          -1023.303                -1076.665
+ BIC (Schwarz, 1978)*          -758.387                 -733.832
+
+*LISREL uses AIC= 2t - 2ln(L) and BIC = tln(N)- 2ln(L)
+
+
+                           Goodness-of-Fit Statistics
+
+ Degrees of Freedom for (C1)-(C2)                      15
+ Maximum Likelihood Ratio Chi-Square (C1)              83.362 (P = 0.0000)
+ Browne's (1984) ADF Chi-Square (C2_NT)                82.264 (P = 0.0000)
+ 
+ Estimated Non-centrality Parameter (NCP)              68.362
+ 90 Percent Confidence Interval for NCP                (43.377 ; 100.862)
+ 
+ Minimum Fit Function Value                            0.0626
+ Population Discrepancy Function Value (F0)            0.0513
+ 90 Percent Confidence Interval for F0                 (0.0326 ; 0.0757)
+ Root Mean Square Error of Approximation (RMSEA)       0.0585
+ 90 Percent Confidence Interval for RMSEA              (0.0466 ; 0.0711)
+ P-Value for Test of Close Fit (RMSEA < 0.05)          0.116
+ 
+ Expected Cross-Validation Index (ECVI)                0.139
+ 90 Percent Confidence Interval for ECVI               (0.120 ; 0.164)
+ ECVI for Saturated Model                              0.0991
+ ECVI for Independence Model                           1.147
+ 
+ Chi-Square for Independence Model (55 df)          1506.465
+ 
+ Normed Fit Index (NFI)                                0.945
+ Non-Normed Fit Index (NNFI)                           0.827
+ Parsimony Normed Fit Index (PNFI)                     0.258
+ Comparative Fit Index (CFI)                           0.953
+ Incremental Fit Index (IFI)                           0.954
+ Relative Fit Index (RFI)                              0.797
+ 
+ Critical N (CN)                                     489.272
+ 
+ 
+ Root Mean Square Residual (RMR)                       0.0764
+ Standardized RMR                                      0.0311
+ Goodness of Fit Index (GFI)                           0.989
+ Adjusted Goodness of Fit Index (AGFI)                 0.951
+ Parsimony Goodness of Fit Index (PGFI)                0.225
+
+ SEM TEST VITAMIN MODEL                                                         
+
+         Fitted Covariance Matrix
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.740
+      EXH     -0.285      0.751
+      ANX     -0.074      0.171      0.191
+     CAUT      0.063     -0.059     -0.017      0.316
+     CDEM     -0.100      0.235      0.049     -0.087      0.346
+     CSUP      0.104     -0.090     -0.032      0.029     -0.035      0.118
+     AUT2      0.001      0.005      0.001      0.013      0.009      0.002
+     DEM2     -0.004      0.009      0.002     -0.019      0.017      0.002
+     SUP2     -0.010      0.011      0.003     -0.003      0.008     -0.010
+      SEX      0.029     -0.004     -0.003     -0.033      0.010      0.014
+      AGE     -0.548     -0.167     -0.029      0.268      0.335     -0.222
+
+         Fitted Covariance Matrix
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.207
+     DEM2      0.027      0.302
+     SUP2      0.004      0.011      0.028
+      SEX       - -        - -        - -       0.129
+      AGE       - -        - -        - -      -0.374     67.136
+
+         Fitted Residuals
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.000
+      EXH      0.000      0.000
+      ANX      0.000      0.000      0.000
+     CAUT      0.000      0.000      0.000      0.001
+     CDEM      0.000      0.000      0.000      0.000      0.000
+     CSUP      0.000      0.000      0.000      0.000      0.000      0.000
+     AUT2      0.003     -0.022      0.001      0.003      0.003     -0.002
+     DEM2     -0.022      0.007      0.021     -0.002      0.002      0.001
+     SUP2     -0.015      0.008      0.004      0.000      0.000      0.000
+      SEX      0.000      0.000      0.000     -0.001      0.000      0.000
+      AGE      0.000      0.020      0.003      0.032      0.032      0.004
+
+         Fitted Residuals
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.000
+     DEM2      0.000      0.000
+     SUP2      0.000      0.000      0.000
+      SEX     -0.008      0.012      0.001       - - 
+      AGE      0.598      0.149      0.024       - -        - - 
+
+ Summary Statistics for Fitted Residuals
+
+ Smallest Fitted Residual =   -0.022
+   Median Fitted Residual =    0.000
+  Largest Fitted Residual =    0.598
+
+ Stemleaf Plot
+
+ - 0|22210000000000000000000000000000000000000000000000000000 
+   0|11122233 
+   1|5 
+   2| 
+   3| 
+   4| 
+   5| 
+   6|0
+
+         Standardized Residuals  
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT     -0.004
+      EXH     -0.003     -0.005
+      ANX      0.000     -0.002     -0.001
+     CAUT     -0.032     -0.003      0.001      0.070
+     CDEM       - -       0.002     -0.001      0.004      0.032
+     CSUP     -0.009     -0.024      0.000     -0.042     -0.007     -0.009
+     AUT2      0.278     -1.920      0.093      0.498      0.347     -0.558
+     DEM2     -1.686      0.520      3.712     -0.289      0.219      0.166
+     SUP2     -3.875      1.811      1.894     -0.027      0.062     -0.008
+      SEX     -0.036      0.031      0.018     -0.252      0.070     -0.024
+      AGE      0.000      0.102      0.030      0.255      0.244      0.048
+
+         Standardized Residuals  
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      0.000
+     DEM2       - -       0.000
+     SUP2      0.000      0.000       - - 
+      SEX     -1.752      2.152      0.327       - - 
+      AGE      5.851      1.209      0.636       - -        - - 
+
+ Summary Statistics for Standardized Residuals
+
+ Smallest Standardized Residual =   -3.875
+   Median Standardized Residual =    0.000
+  Largest Standardized Residual =    5.851
+
+ Stemleaf Plot
+
+ - 3|9 
+ - 2| 
+ - 1|987 
+ - 0|63300000000000000000000000000000000000000 
+   0|111112223333556 
+   1|289 
+   2|2 
+   3|7 
+   4| 
+   5|9
+ Largest Negative Standardized Residuals
+ Residual for     SUP2 and      SAT  -3.875
+ Largest Positive Standardized Residuals
+ Residual for     DEM2 and      ANX   3.712
+ Residual for      AGE and     AUT2   5.851
+
+ SEM TEST VITAMIN MODEL                                                         
+
+                         Qplot of Standardized Residuals
+
+  3.5..........................................................................
+     .                                                                       ..
+     .                                                                      . .
+     .                                                                    .   .
+     .                                                                  .     .
+     .                                                                 .      .
+     .                                                               .        .
+     .                                                             .          .
+     .                                                            .           .
+     .                                                          .             x
+     .                                                        .               .
+     .                                                       .                x
+     .                                                     .                  .
+     .                                                   .   x  x             .
+     .                                                  .   x                 .
+ N   .                                          x     x                       .
+ o   .                                         *    .                         .
+ r   .                                      x*     .                          .
+ m   .                                      x    .                            .
+ a   .                                    x*   .                              .
+ l   .                                    x   .                               .
+     .                                    x .                                 .
+ Q   .                                    *                                   .
+ u   .                                   x                                    .
+ a   .                                 . x                                    .
+ n   .                               .   x                                    .
+ t   .                              .    x                                    .
+ i   .                            .      x                                    .
+ l   .                          .        x                                    .
+ e   .                         .         *                                    .
+ s   .                       .        xx                                      .
+     .                     .        x                                         .
+     .                 xx .                                                   .
+     .                  .                                                     .
+     .               x.                                                       .
+     .               .                                                        .
+     x             .                                                          .
+     .           .                                                            .
+     .          .                                                             .
+     .        .                                                               .
+     .      .                                                                 .
+     .     .                                                                  .
+     .   .                                                                    .
+     . .                                                                      .
+ -3.5..........................................................................
+   -3.5                                                                      3.5
+                             Standardized Residuals
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Modification Indices and Expected Change
+
+         Modification Indices for BETA           
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -        - -        - -        - - 
+      EXH       - -        - -        - -        - -        - -        - - 
+      ANX       - -        - -        - -        - -        - -        - - 
+     CAUT      2.506      3.781      4.398       - -        - -        - - 
+     CDEM      7.519      0.102      6.745       - -        - -        - - 
+     CSUP     14.809      5.736      0.953       - -        - -        - - 
+     AUT2      0.483      6.560      0.109     10.328     12.775     20.403
+     DEM2      1.918      0.345      9.823      4.236      3.900      2.450
+     SUP2     16.959      5.736      2.248      0.008      0.093      0.000
+
+         Modification Indices for BETA           
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT      0.080      3.299     14.290
+      EXH      5.390      1.275      0.530
+      ANX      1.179     11.339      1.071
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+         Expected Change for BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -        - -        - -        - - 
+      EXH       - -        - -        - -        - -        - -        - - 
+      ANX       - -        - -        - -        - -        - -        - - 
+     CAUT     -0.334      0.438      0.830       - -        - -        - - 
+     CDEM      0.699     -0.087     -1.245       - -        - -        - - 
+     CSUP     -0.245      0.163      0.117       - -        - -        - - 
+     AUT2      0.011     -0.043     -0.010      0.428      0.831     -1.264
+     DEM2     -0.026      0.012      0.110     -0.329      0.551      0.525
+     SUP2     -0.023      0.014      0.016     -0.004      0.026      0.000
+
+         Expected Change for BETA        
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT      0.013     -0.069     -0.479
+      EXH     -0.092     -0.037      0.080
+      ANX      0.025      0.065      0.067
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+         Standardized Expected Change for BETA           
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -        - -        - -        - - 
+      EXH       - -        - -        - -        - -        - -        - - 
+      ANX       - -        - -        - -        - -        - -        - - 
+     CAUT     -0.689      0.899      3.379       - -        - -        - - 
+     CDEM      1.381     -0.171     -4.840       - -        - -        - - 
+     CSUP     -0.830      0.548      0.779       - -        - -        - - 
+     AUT2      0.027     -0.108     -0.049      1.671      3.102     -8.079
+     DEM2     -0.054      0.025      0.459     -1.064      1.704      2.784
+     SUP2     -0.160      0.100      0.217     -0.048      0.264      0.004
+
+         Standardized Expected Change for BETA           
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT      0.033     -0.146     -3.332
+      EXH     -0.234     -0.078      0.552
+      ANX      0.128      0.273      0.917
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+         Modification Indices for GAMMA          
+
+                 SEX        AGE   
+            --------   --------
+      SAT       - -        - - 
+      EXH       - -        - - 
+      ANX       - -        - - 
+     CAUT       - -        - - 
+     CDEM       - -        - - 
+     CSUP       - -        - - 
+     AUT2      3.987     32.910
+     DEM2      5.371      0.312
+     SUP2      0.024      0.058
+
+         Expected Change for GAMMA       
+
+                 SEX        AGE   
+            --------   --------
+      SAT       - -        - - 
+      EXH       - -        - - 
+      ANX       - -        - - 
+     CAUT       - -        - - 
+     CDEM       - -        - - 
+     CSUP       - -        - - 
+     AUT2     -0.069      0.009
+     DEM2      0.096      0.001
+     SUP2      0.002      0.000
+
+         Standardized Expected Change for GAMMA          
+
+                 SEX        AGE   
+            --------   --------
+      SAT       - -        - - 
+      EXH       - -        - - 
+      ANX       - -        - - 
+     CAUT       - -        - - 
+     CDEM       - -        - - 
+     CSUP       - -        - - 
+     AUT2     -0.054      0.156
+     DEM2      0.063      0.015
+     SUP2      0.004      0.007
+
+ No Non-Zero Modification Indices for PHI         
+
+         Modification Indices for PSI            
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - - 
+      EXH       - -        - - 
+      ANX       - -        - -        - - 
+     CAUT      1.146      0.820      2.097       - - 
+     CDEM      7.550      2.065      7.119       - -        - - 
+     CSUP     10.940      1.580      0.001       - -        - -        - - 
+     AUT2      0.416      5.084      0.488       - -        - -        - - 
+     DEM2      2.022      0.983     10.093       - -        - -        - - 
+     SUP2     13.034      0.949      0.354       - -        - -        - - 
+
+         Modification Indices for PSI            
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2       - - 
+     DEM2       - -        - - 
+     SUP2       - -        - -        - - 
+
+         Expected Change for PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - - 
+      EXH       - -        - - 
+      ANX       - -        - -        - - 
+     CAUT     -0.136      0.100      0.094       - - 
+     CDEM      0.422      0.191     -0.209       - -        - - 
+     CSUP     -0.127      0.042      0.001       - -        - -        - - 
+     AUT2      0.006     -0.018      0.003       - -        - -        - - 
+     DEM2     -0.016     -0.010      0.018       - -        - -        - - 
+     SUP2     -0.012      0.003      0.001       - -        - -        - - 
+
+         Expected Change for PSI         
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2       - - 
+     DEM2       - -        - - 
+     SUP2       - -        - -        - - 
+
+         Standardized Expected Change for PSI            
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - - 
+      EXH       - -        - - 
+      ANX       - -        - -        - - 
+     CAUT     -0.281      0.204      0.382       - - 
+     CDEM      0.833      0.375     -0.813       - -        - - 
+     CSUP     -0.429      0.140      0.004       - -        - -        - - 
+     AUT2      0.015     -0.047      0.017       - -        - -        - - 
+     DEM2     -0.034     -0.020      0.076       - -        - -        - - 
+     SUP2     -0.085      0.020      0.014       - -        - -        - - 
+
+         Standardized Expected Change for PSI            
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2       - - 
+     DEM2       - -        - - 
+     SUP2       - -        - -        - - 
+
+         Modification Indices for THETA-EPS      
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - - 
+      EXH       - -        - - 
+      ANX       - -        - -        - - 
+     CAUT      1.146      0.820      2.097      0.214
+     CDEM      7.550      2.065      7.119      4.894      0.013
+     CSUP     10.940      1.580      0.001      9.986      8.186     15.390
+     AUT2      0.416      5.084      0.488      0.202      6.079      3.861
+     DEM2      2.022      0.983     10.093      2.407      0.173      4.674
+     SUP2     13.034      0.949      0.354      6.085      5.439     18.232
+
+         Modification Indices for THETA-EPS      
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2       - - 
+     DEM2       - -        - - 
+     SUP2       - -        - -        - - 
+
+         Expected Change for THETA-EPS   
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - - 
+      EXH       - -        - - 
+      ANX       - -        - -        - - 
+     CAUT     -0.136      0.100      0.094      0.480
+     CDEM      0.422      0.191     -0.209     -0.418      0.027
+     CSUP     -0.127      0.042      0.001      0.426     -0.146      0.172
+     AUT2      0.006     -0.018      0.003      0.035      0.035     -0.021
+     DEM2     -0.016     -0.010      0.018      0.143     -0.007      0.028
+     SUP2     -0.012      0.003      0.001      0.069     -0.012      0.017
+
+         Expected Change for THETA-EPS   
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2       - - 
+     DEM2       - -        - - 
+     SUP2       - -        - -        - - 
+
+         Modification Indices for THETA-DELTA-EPS
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SEX      2.104      0.538      1.833      1.036      0.371     14.960
+      AGE      9.966      0.040      0.464      1.359       - -       0.633
+
+         Modification Indices for THETA-DELTA-EPS
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SEX      1.836      6.391      0.246
+      AGE     28.387      0.669      0.048
+
+         Expected Change for THETA-DELTA-EPS 
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SEX      0.447     -0.196      0.213      0.667     -0.262      1.222
+      AGE    -31.701      1.738      3.493     13.306       - -       2.687
+
+         Expected Change for THETA-DELTA-EPS 
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SEX     -0.006      0.013      0.001
+      AGE      0.533      0.098      0.008
+
+         Modification Indices for THETA-DELTA    
+
+                 SEX        AGE   
+            --------   --------
+      SEX      2.190
+      AGE      2.536       - - 
+
+         Expected Change for THETA-DELTA 
+
+                 SEX        AGE   
+            --------   --------
+      SEX     -2.844
+      AGE     37.275       - - 
+
+ Maximum Modification Index is   32.91 for Element ( 7, 2) of GAMMA
+
+         Covariance Matrix of Parameter Estimates    
+
+              BE 1_4     BE 1_5     BE 1_6     BE 2_4     BE 2_5     BE 2_6   
+            --------   --------   --------   --------   --------   --------
+   BE 1_4      0.002
+   BE 1_5      0.000      0.001
+   BE 1_6      0.000      0.000      0.004
+   BE 2_4      0.000      0.000      0.000      0.001
+   BE 2_5      0.000      0.000      0.000      0.000      0.001
+   BE 2_6      0.000      0.000     -0.001      0.000      0.000      0.004
+   BE 3_4      0.000      0.000      0.000      0.000      0.000      0.000
+   BE 3_5      0.000      0.000      0.000      0.000      0.000      0.000
+   BE 3_6      0.000      0.000      0.000      0.000      0.000      0.001
+   GA 1_1      0.000      0.000     -0.001      0.000      0.000      0.000
+   GA 1_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              BE 3_4     BE 3_5     BE 3_6     GA 1_1     GA 1_2     GA 2_1   
+            --------   --------   --------   --------   --------   --------
+   BE 3_4      0.000
+   BE 3_5      0.000      0.000
+   BE 3_6      0.000      0.000      0.001
+   GA 1_1      0.000      0.000      0.000      0.004
+   GA 1_2      0.000      0.000      0.000      0.000      0.000
+   GA 2_1      0.000      0.000      0.000     -0.001      0.000      0.003
+   GA 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 3_1      0.000      0.000      0.000      0.000      0.000      0.001
+   GA 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              GA 2_2     GA 3_1     GA 3_2     GA 4_1     GA 4_2     GA 5_1   
+            --------   --------   --------   --------   --------   --------
+   GA 2_2      0.000
+   GA 3_1      0.000      0.001
+   GA 3_2      0.000      0.000      0.000
+   GA 4_1      0.000      0.000      0.000      0.002
+   GA 4_2      0.000      0.000      0.000      0.000      0.000
+   GA 5_1      0.000      0.000      0.000      0.000      0.000      0.002
+   GA 5_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              GA 5_2     GA 6_1     GA 6_2     PH 1_1     PH 2_1     PH 2_2   
+            --------   --------   --------   --------   --------   --------
+   GA 5_2      0.000
+   GA 6_1      0.000      0.001
+   GA 6_2      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.007
+   PH 2_2      0.000      0.000      0.000      0.000     -0.038      6.768
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              PS 1_1     PS 2_1     PS 2_2     PS 3_1     PS 3_2     PS 3_3   
+            --------   --------   --------   --------   --------   --------
+   PS 1_1      0.001
+   PS 2_1      0.000      0.000
+   PS 2_2      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              PS 4_4     PS 5_4     PS 5_5     PS 6_4     PS 6_5     PS 6_6   
+            --------   --------   --------   --------   --------   --------
+   PS 4_4      0.000
+   PS 5_4      0.000      0.000
+   PS 5_5      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              PS 7_4     PS 7_5     PS 7_6     PS 7_7     PS 8_4     PS 8_5   
+            --------   --------   --------   --------   --------   --------
+   PS 7_4      0.000
+   PS 7_5      0.000      0.000
+   PS 7_6      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              PS 8_6     PS 8_7     PS 8_8     PS 9_4     PS 9_5     PS 9_6   
+            --------   --------   --------   --------   --------   --------
+   PS 8_6      0.000
+   PS 8_7      0.000      0.000
+   PS 8_8      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Covariance Matrix of Parameter Estimates    
+
+              PS 9_7     PS 9_8     PS 9_9   
+            --------   --------   --------
+   PS 9_7      0.000
+   PS 9_8      0.000      0.000
+   PS 9_9      0.000      0.000      0.000
+
+ SEM TEST VITAMIN MODEL                                                         
+
+         Correlation Matrix of Parameter Estimates   
+
+              BE 1_4     BE 1_5     BE 1_6     BE 2_4     BE 2_5     BE 2_6   
+            --------   --------   --------   --------   --------   --------
+   BE 1_4      1.000
+   BE 1_5      0.238      1.000
+   BE 1_6     -0.135      0.139      1.000
+   BE 2_4     -0.282     -0.067      0.038      1.000
+   BE 2_5     -0.067     -0.282     -0.039      0.238      1.000
+   BE 2_6      0.038     -0.039     -0.282     -0.135      0.139      1.000
+   BE 3_4     -0.115     -0.027      0.016      0.390      0.093     -0.052
+   BE 3_5     -0.027     -0.115     -0.016      0.093      0.390      0.054
+   BE 3_6      0.016     -0.016     -0.115     -0.052      0.054      0.390
+   GA 1_1      0.161     -0.036     -0.133     -0.045      0.010      0.038
+   GA 1_2     -0.068     -0.080      0.061      0.019      0.022     -0.017
+   GA 2_1     -0.045      0.010      0.038      0.161     -0.036     -0.133
+   GA 2_2      0.019      0.022     -0.017     -0.068     -0.080      0.061
+   GA 3_1     -0.018      0.004      0.015      0.063     -0.014     -0.052
+   GA 3_2      0.008      0.009     -0.007     -0.026     -0.031      0.024
+   GA 4_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Correlation Matrix of Parameter Estimates   
+
+              BE 3_4     BE 3_5     BE 3_6     GA 1_1     GA 1_2     GA 2_1   
+            --------   --------   --------   --------   --------   --------
+   BE 3_4      1.000
+   BE 3_5      0.238      1.000
+   BE 3_6     -0.135      0.139      1.000
+   GA 1_1     -0.018      0.004      0.015      1.000
+   GA 1_2      0.008      0.009     -0.007      0.111      1.000
+   GA 2_1      0.063     -0.014     -0.052     -0.282     -0.031      1.000
+   GA 2_2     -0.026     -0.031      0.024     -0.031     -0.282      0.111
+   GA 3_1      0.161     -0.036     -0.133     -0.115     -0.013      0.390
+   GA 3_2     -0.068     -0.080      0.061     -0.013     -0.115      0.043
+   GA 4_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 4_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 5_2      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_1      0.000      0.000      0.000      0.000      0.000      0.000
+   GA 6_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Correlation Matrix of Parameter Estimates   
+
+              GA 2_2     GA 3_1     GA 3_2     GA 4_1     GA 4_2     GA 5_1   
+            --------   --------   --------   --------   --------   --------
+   GA 2_2      1.000
+   GA 3_1      0.043      1.000
+   GA 3_2      0.390      0.111      1.000
+   GA 4_1      0.000      0.000      0.000      1.000
+   GA 4_2      0.000      0.000      0.000      0.127      1.000
+   GA 5_1      0.000      0.000      0.000     -0.260     -0.033      1.000
+   GA 5_2      0.000      0.000      0.000     -0.033     -0.260      0.127
+   GA 6_1      0.000      0.000      0.000      0.172      0.022     -0.169
+   GA 6_2      0.000      0.000      0.000      0.022      0.172     -0.021
+   PH 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PH 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Correlation Matrix of Parameter Estimates   
+
+              GA 5_2     GA 6_1     GA 6_2     PH 1_1     PH 2_1     PH 2_2   
+            --------   --------   --------   --------   --------   --------
+   GA 5_2      1.000
+   GA 6_1     -0.021      1.000
+   GA 6_2     -0.169      0.127      1.000
+   PH 1_1      0.000      0.000      0.000      1.000
+   PH 2_1      0.000      0.000      0.000     -0.178      1.000
+   PH 2_2      0.000      0.000      0.000      0.016     -0.178      1.000
+   PS 1_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 2_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_1      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_2      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 3_3      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Correlation Matrix of Parameter Estimates   
+
+              PS 1_1     PS 2_1     PS 2_2     PS 3_1     PS 3_2     PS 3_3   
+            --------   --------   --------   --------   --------   --------
+   PS 1_1      1.000
+   PS 2_1     -0.383      1.000
+   PS 2_2      0.079     -0.383      1.000
+   PS 3_1     -0.162      0.404     -0.154      1.000
+   PS 3_2      0.043     -0.202      0.513     -0.302      1.000
+   PS 3_3      0.013     -0.061      0.152     -0.162      0.513      1.000
+   PS 4_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 5_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 6_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 7_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 8_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_4      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_5      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_6      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_7      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_8      0.000      0.000      0.000      0.000      0.000      0.000
+   PS 9_9      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Correlation Matrix of Parameter Estimates   
+
+              PS 4_4     PS 5_4     PS 5_5     PS 6_4     PS 6_5     PS 6_6   
+            --------   --------   --------   --------   --------   --------
+   PS 4_4      1.000
+   PS 5_4     -0.358      1.000
+   PS 5_5      0.068     -0.358      1.000
+   PS 6_4      0.243     -0.213      0.065      1.000
+   PS 6_5     -0.064      0.210     -0.247     -0.284      1.000
+   PS 6_6      0.030     -0.042      0.032      0.243     -0.247      1.000
+   PS 7_4      0.074      0.019     -0.012      0.024      0.002      0.004
+   PS 7_5     -0.019      0.042      0.048     -0.013      0.009     -0.004
+   PS 7_6      0.013     -0.003     -0.008      0.054      0.031      0.021
+   PS 7_7      0.003      0.002      0.001      0.001      0.001      0.000
+   PS 8_4     -0.089      0.068     -0.020      0.000      0.007      0.003
+   PS 8_5      0.023     -0.074      0.077      0.008      0.001     -0.003
+   PS 8_6     -0.016      0.020     -0.014     -0.060      0.052      0.015
+   PS 8_7     -0.005      0.001      0.003      0.000      0.001      0.000
+   PS 8_8      0.004     -0.005      0.003     -0.001      0.001      0.000
+   PS 9_4     -0.052      0.087     -0.030     -0.185      0.060     -0.045
+   PS 9_5      0.014     -0.056      0.113      0.053     -0.192      0.045
+   PS 9_6     -0.009      0.019     -0.020     -0.066      0.109     -0.253
+   PS 9_7     -0.003      0.003      0.004     -0.010     -0.005     -0.004
+   PS 9_8      0.003     -0.007      0.006      0.011     -0.009     -0.003
+   PS 9_9      0.001     -0.004      0.006      0.009     -0.020      0.033
+
+         Correlation Matrix of Parameter Estimates   
+
+              PS 7_4     PS 7_5     PS 7_6     PS 7_7     PS 8_4     PS 8_5   
+            --------   --------   --------   --------   --------   --------
+   PS 7_4      1.000
+   PS 7_5     -0.259      1.000
+   PS 7_6      0.175     -0.177      1.000
+   PS 7_7      0.074      0.048      0.021      1.000
+   PS 8_4      0.103     -0.025      0.019      0.008      1.000
+   PS 8_5     -0.030      0.108     -0.018      0.005     -0.264      1.000
+   PS 8_6      0.018     -0.018      0.106      0.002      0.173     -0.177
+   PS 8_7     -0.057      0.057      0.012      0.150      0.046      0.039
+   PS 8_8     -0.009      0.008      0.002      0.011     -0.089      0.077
+   PS 9_4      0.054     -0.011      0.000      0.004      0.122     -0.036
+   PS 9_5     -0.016      0.059     -0.016      0.003     -0.033      0.124
+   PS 9_6      0.009     -0.009      0.053      0.001      0.020     -0.020
+   PS 9_7     -0.034      0.082     -0.181      0.080      0.002      0.013
+   PS 9_8     -0.007      0.011     -0.019      0.008     -0.044      0.086
+   PS 9_9     -0.003      0.006     -0.014      0.003     -0.006      0.014
+
+         Correlation Matrix of Parameter Estimates   
+
+              PS 8_6     PS 8_7     PS 8_8     PS 9_4     PS 9_5     PS 9_6   
+            --------   --------   --------   --------   --------   --------
+   PS 8_6      1.000
+   PS 8_7      0.016      1.000
+   PS 8_8      0.015      0.150      1.000
+   PS 9_4      0.032      0.003     -0.011      1.000
+   PS 9_5     -0.031      0.007      0.009     -0.263      1.000
+   PS 9_6      0.117      0.002      0.002      0.178     -0.188      1.000
+   PS 9_7     -0.017      0.126      0.018      0.050      0.038      0.005
+   PS 9_8     -0.179      0.068      0.169     -0.067      0.063     -0.011
+   PS 9_9     -0.031      0.010      0.015     -0.052      0.113     -0.253
+
+         Correlation Matrix of Parameter Estimates   
+
+              PS 9_7     PS 9_8     PS 9_9   
+            --------   --------   --------
+   PS 9_7      1.000
+   PS 9_8      0.112      1.000
+   PS 9_9      0.080      0.169      1.000
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Covariances
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ First Order Derivatives
+
+         BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.000      0.000      0.000      0.000      0.000      0.000
+      EXH      0.000      0.000      0.000      0.000      0.000      0.000
+      ANX      0.000      0.000      0.000      0.000      0.000      0.000
+     CAUT      0.006     -0.006     -0.004      0.000      0.000      0.000
+     CDEM     -0.008      0.001      0.004      0.000      0.000      0.000
+     CSUP      0.045     -0.026     -0.006      0.000      0.000      0.000
+     AUT2     -0.034      0.115      0.008     -0.018     -0.012      0.012
+     DEM2      0.056     -0.022     -0.067      0.010     -0.005     -0.004
+     SUP2      0.553     -0.299     -0.106      0.001     -0.003      0.000
+
+         BETA        
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT     -0.005      0.036      0.022
+      EXH      0.044      0.026     -0.005
+      ANX     -0.035     -0.130     -0.012
+     CAUT      0.000      0.000      0.000
+     CDEM      0.000      0.000      0.000
+     CSUP      0.000      0.000      0.000
+     AUT2      0.000      0.000      0.000
+     DEM2      0.000      0.000      0.000
+     SUP2      0.000      0.000      0.000
+
+         GAMMA       
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.000      0.000
+      EXH      0.000      0.000
+      ANX      0.000      0.000
+     CAUT      0.000      0.000
+     CDEM      0.000      0.000
+     CSUP      0.000      0.000
+     AUT2      0.044     -2.849
+     DEM2     -0.042     -0.231
+     SUP2     -0.009     -0.325
+
+         PHI         
+
+                 SEX        AGE   
+            --------   --------
+      SEX      0.000
+      AGE      0.000      0.000
+
+         PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.000
+      EXH      0.000      0.000
+      ANX      0.000      0.000      0.000
+     CAUT      0.006     -0.006     -0.017      0.000
+     CDEM     -0.013     -0.008      0.026      0.000      0.000
+     CSUP      0.065     -0.028     -0.001      0.000      0.000      0.000
+     AUT2     -0.052      0.208     -0.109      0.000      0.000      0.000
+     DEM2      0.095      0.076     -0.415      0.000      0.000      0.000
+     SUP2      0.800     -0.249     -0.258      0.000      0.000      0.000
+
+         PSI         
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2      0.000
+     DEM2      0.000      0.000
+     SUP2      0.000      0.000      0.000
+
+         THETA-EPS   
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.000
+      EXH      0.000      0.000
+      ANX      0.000      0.000      0.000
+     CAUT      0.006     -0.006     -0.017      0.000
+     CDEM     -0.013     -0.008      0.026      0.009      0.000
+     CSUP      0.065     -0.028     -0.001     -0.018      0.042     -0.067
+     AUT2     -0.052      0.208     -0.109     -0.004     -0.129      0.138
+     DEM2      0.095      0.076     -0.415     -0.013      0.018     -0.126
+     SUP2      0.800     -0.249     -0.258     -0.067      0.339     -0.828
+
+         THETA-EPS   
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2      0.000
+     DEM2      0.000      0.000
+     SUP2      0.000      0.000      0.000
+
+         THETA-DELTA-EPS 
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SEX     -0.004      0.002     -0.006     -0.001      0.001     -0.009
+      AGE      0.000      0.000      0.000      0.000      0.000      0.000
+
+         THETA-DELTA-EPS 
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SEX      0.231     -0.359     -0.230
+      AGE     -0.040     -0.005     -0.004
+
+         THETA-DELTA 
+
+                 SEX        AGE   
+            --------   --------
+      SEX      0.001
+      AGE      0.000      0.000
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Factor Scores Regressions
+
+         Y   
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      1.000      0.000      0.000      0.000      0.000      0.000
+      EXH      0.000      1.000      0.000      0.000      0.000      0.000
+      ANX      0.000      0.000      1.000      0.000      0.000      0.000
+     CAUT      0.000      0.000      0.000      1.000      0.000      0.000
+     CDEM      0.000      0.000      0.000      0.000      1.000      0.000
+     CSUP      0.000      0.000      0.000      0.000      0.000      1.000
+     AUT2      0.000      0.000      0.000      0.000      0.000      0.000
+     DEM2      0.000      0.000      0.000      0.000      0.000      0.000
+     SUP2      0.000      0.000      0.000      0.000      0.000      0.000
+
+         Y   
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+      SAT      0.000      0.000      0.000      0.000      0.000
+      EXH      0.000      0.000      0.000      0.000      0.000
+      ANX      0.000      0.000      0.000      0.000      0.000
+     CAUT      0.000      0.000      0.000      0.000       - - 
+     CDEM      0.000      0.000      0.000      0.000      0.000
+     CSUP      0.000      0.000      0.000      0.000      0.000
+     AUT2      1.000      0.000       - -       0.000      0.000
+     DEM2      0.000      1.000      0.000      0.000      0.000
+     SUP2       - -       0.000      1.000      0.000      0.000
+
+         X   
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SEX      0.000      0.000      0.000      0.000      0.000      0.000
+      AGE      0.000       - -       0.000       - -       0.000      0.000
+
+         X   
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+      SEX      0.000      0.000      0.000      1.000      0.000
+      AGE      0.000      0.000      0.000      0.000      1.000
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Standardized Solution           
+
+         BETA        
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -       0.064     -0.128      0.309
+      EXH       - -        - -        - -       0.029      0.433     -0.235
+      ANX       - -        - -        - -       0.000      0.159     -0.186
+     CAUT       - -        - -        - -        - -        - -        - - 
+     CDEM       - -        - -        - -        - -        - -        - - 
+     CSUP       - -        - -        - -        - -        - -        - - 
+     AUT2       - -        - -        - -        - -        - -        - - 
+     DEM2       - -        - -        - -        - -        - -        - - 
+     SUP2       - -        - -        - -        - -        - -        - - 
+
+         BETA        
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT       - -        - -        - - 
+      EXH       - -        - -        - - 
+      ANX       - -        - -        - - 
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+         GAMMA       
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.070     -0.039
+      EXH     -0.012     -0.075
+      ANX     -0.009     -0.035
+     CAUT     -0.156      0.038
+     CDEM      0.059      0.077
+     CSUP      0.103     -0.066
+     AUT2       - -        - - 
+     DEM2       - -        - - 
+     SUP2       - -        - - 
+
+         Correlation Matrix of Y and X           
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      1.000
+      EXH     -0.382      1.000
+      ANX     -0.197      0.452      1.000
+     CAUT      0.130     -0.122     -0.070      1.000
+     CDEM     -0.198      0.461      0.189     -0.262      1.000
+     CSUP      0.352     -0.302     -0.212      0.150     -0.175      1.000
+     AUT2      0.004      0.013      0.003      0.052      0.034      0.015
+     DEM2     -0.008      0.019      0.007     -0.062      0.054      0.011
+     SUP2     -0.068      0.076      0.046     -0.036      0.080     -0.180
+      SEX      0.092     -0.013     -0.017     -0.161      0.049      0.111
+      AGE     -0.078     -0.024     -0.008      0.058      0.069     -0.079
+
+         Correlation Matrix of Y and X           
+
+                AUT2       DEM2       SUP2        SEX        AGE   
+            --------   --------   --------   --------   --------
+     AUT2      1.000
+     DEM2      0.106      1.000
+     SUP2      0.056      0.120      1.000
+      SEX       - -        - -        - -       1.000
+      AGE       - -        - -        - -      -0.127      1.000
+
+         PSI         
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT      0.848
+      EXH     -0.222      0.731
+      ANX     -0.102      0.321      0.930
+     CAUT       - -        - -        - -       0.973
+     CDEM       - -        - -        - -      -0.257      0.992
+     CSUP       - -        - -        - -       0.171     -0.175      0.983
+     AUT2       - -        - -        - -       0.052      0.034      0.015
+     DEM2       - -        - -        - -      -0.062      0.054      0.011
+     SUP2       - -        - -        - -      -0.036      0.080     -0.180
+
+         PSI         
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+     AUT2      1.000
+     DEM2      0.106      1.000
+     SUP2      0.056      0.120      1.000
+
+         Regression Matrix Y on X (Standardized)     
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.084     -0.067
+      EXH     -0.016     -0.026
+      ANX     -0.019     -0.011
+     CAUT     -0.156      0.038
+     CDEM      0.059      0.077
+     CSUP      0.103     -0.066
+     AUT2       - -        - - 
+     DEM2       - -        - - 
+     SUP2       - -        - - 
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Total and Indirect Effects
+
+         Total Effects of X on Y     
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.201     -0.007
+             (0.065)    (0.003)
+               3.064     -2.453
+ 
+      EXH     -0.038     -0.003
+             (0.066)    (0.003)
+              -0.572     -0.929
+ 
+      ANX     -0.023     -0.001
+             (0.034)    (0.001)
+              -0.681     -0.382
+ 
+     CAUT     -0.244      0.003
+             (0.042)    (0.002)
+              -5.760      1.414
+ 
+     CDEM      0.096      0.006
+             (0.045)    (0.002)
+               2.142      2.806
+ 
+     CSUP      0.098     -0.003
+             (0.026)    (0.001)
+               3.826     -2.443
+ 
+     AUT2       - -        - - 
+ 
+     DEM2       - -        - - 
+ 
+     SUP2       - -        - - 
+ 
+
+         Indirect Effects of X on Y      
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.034     -0.003
+             (0.027)    (0.001)
+               1.258     -2.629
+ 
+      EXH     -0.008      0.005
+             (0.036)    (0.002)
+              -0.230      3.462
+ 
+      ANX     -0.012      0.001
+             (0.011)    (0.000)
+              -1.084      3.137
+ 
+     CAUT       - -        - - 
+ 
+     CDEM       - -        - - 
+ 
+     CSUP       - -        - - 
+ 
+     AUT2       - -        - - 
+ 
+     DEM2       - -        - - 
+ 
+     SUP2       - -        - - 
+ 
+
+         Total Effects of Y on Y     
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -       0.098     -0.187      0.775
+                                              (0.041)    (0.039)    (0.065)
+                                                2.387     -4.828     11.858
+ 
+      EXH       - -        - -        - -       0.045      0.638     -0.594
+                                              (0.038)    (0.036)    (0.061)
+                                                1.188     17.605     -9.721
+ 
+      ANX       - -        - -        - -       0.000      0.118     -0.236
+                                              (0.022)    (0.021)    (0.035)
+                                                0.010      5.744     -6.802
+ 
+     CAUT       - -        - -        - -        - -        - -        - - 
+ 
+     CDEM       - -        - -        - -        - -        - -        - - 
+ 
+     CSUP       - -        - -        - -        - -        - -        - - 
+ 
+     AUT2       - -        - -        - -        - -        - -        - - 
+ 
+     DEM2       - -        - -        - -        - -        - -        - - 
+ 
+     SUP2       - -        - -        - -        - -        - -        - - 
+ 
+
+         Total Effects of Y on Y     
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT       - -        - -        - - 
+ 
+      EXH       - -        - -        - - 
+ 
+      ANX       - -        - -        - - 
+ 
+     CAUT       - -        - -        - - 
+ 
+     CDEM       - -        - -        - - 
+ 
+     CSUP       - -        - -        - - 
+ 
+     AUT2       - -        - -        - - 
+ 
+     DEM2       - -        - -        - - 
+ 
+     SUP2       - -        - -        - - 
+ 
+
+    Largest Eigenvalue of B*B' (Stability Index) is   1.350
+
+ SEM TEST VITAMIN MODEL                                                         
+
+ Standardized Total and Indirect Effects
+
+         Standardized Total Effects of X on Y    
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.084     -0.067
+      EXH     -0.016     -0.026
+      ANX     -0.019     -0.011
+     CAUT     -0.156      0.038
+     CDEM      0.059      0.077
+     CSUP      0.103     -0.066
+     AUT2       - -        - - 
+     DEM2       - -        - - 
+     SUP2       - -        - - 
+
+         Standardized Indirect Effects of X on Y     
+
+                 SEX        AGE   
+            --------   --------
+      SAT      0.014     -0.028
+      EXH     -0.003      0.050
+      ANX     -0.010      0.024
+     CAUT       - -        - - 
+     CDEM       - -        - - 
+     CSUP       - -        - - 
+     AUT2       - -        - - 
+     DEM2       - -        - - 
+     SUP2       - -        - - 
+
+         Standardized Total Effects of Y on Y    
+
+                 SAT        EXH        ANX       CAUT       CDEM       CSUP   
+            --------   --------   --------   --------   --------   --------
+      SAT       - -        - -        - -       0.064     -0.128      0.309
+      EXH       - -        - -        - -       0.029      0.433     -0.235
+      ANX       - -        - -        - -       0.000      0.159     -0.186
+     CAUT       - -        - -        - -        - -        - -        - - 
+     CDEM       - -        - -        - -        - -        - -        - - 
+     CSUP       - -        - -        - -        - -        - -        - - 
+     AUT2       - -        - -        - -        - -        - -        - - 
+     DEM2       - -        - -        - -        - -        - -        - - 
+     SUP2       - -        - -        - -        - -        - -        - - 
+
+         Standardized Total Effects of Y on Y    
+
+                AUT2       DEM2       SUP2   
+            --------   --------   --------
+      SAT       - -        - -        - - 
+      EXH       - -        - -        - - 
+      ANX       - -        - -        - - 
+     CAUT       - -        - -        - - 
+     CDEM       - -        - -        - - 
+     CSUP       - -        - -        - - 
+     AUT2       - -        - -        - - 
+     DEM2       - -        - -        - - 
+     SUP2       - -        - -        - - 
+
+                           Time used 0.047 seconds
